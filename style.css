@@ -1,0 +1,58 @@
+/*
+Theme Name: KD Learning
+Author: Khoa Do
+Description: Custom Wordpress Theme with BootStrap.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kd-learning
+*/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.img-wrapper {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post-thumbnail {
+    width: 100%;
+    min-height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
