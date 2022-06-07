@@ -28,12 +28,36 @@ add_action('after_setup_theme', 'wpdocs_after_setup_theme');
 function custom_widget()
 {
     register_sidebar([
+        'name'          => 'Front Page Banner Text',
+        'id'            => 'front_page_banner_text',
+        'before_widget' => '<div class="banner-text">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h1 class="fs-4">',
+        'after_title'   => '</h1>',
+    ]);
+    register_sidebar([
+        'name'          => 'Front Page Banner Image',
+        'id'            => 'front_page_banner_image',
+        'before_widget' => '<div class="banner-img">',
+        'after_widget'  => '</div>',
+        'before_title'  => '',
+        'after_title'   => '',
+    ]);
+    register_sidebar([
         'name'          => 'Default Sidebar',
         'id'            => 'default_sidebar',
         'before_widget' => '<aside class="card small mb-3 default_sidebar">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h3 class="card-header fs-6">',
         'after_title'   => '</h3>',
+    ]);
+    register_sidebar([
+        'name'          => 'Signup Form',
+        'id'            => 'signup_form',
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
     ]);
     register_sidebar([
         'name'          => 'Footer Widgets',

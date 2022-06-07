@@ -40,6 +40,7 @@ a {
     text-decoration: none !important;
 }
 
+
 .img-wrapper {
     width: 300px;
     height: 200px;
@@ -51,8 +52,34 @@ a {
     min-height: 100%;
 }
 
+/* 
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+} */
+
+.feature-holder img {
+    height: auto;
+    width: 50px;
+    margin: 20px;
+}
+
+/* Center modal in middle of screen */
+.modal {
+    text-align: center;
+}
+
+.modal::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
