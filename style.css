@@ -50,14 +50,14 @@ a {
 .post-thumbnail {
     width: 100%;
     min-height: 100%;
+
 }
 
-/* 
 footer {
-    position: absolute;
+    left: 0;
     bottom: 0;
     width: 100%;
-} */
+}
 
 .feature-holder img {
     height: auto;

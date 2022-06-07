@@ -12,5 +12,9 @@
     $('.footer_widgets > ul > li > a').addClass(
       'text-decoration-none text-white'
     );
+    // Comments
+    $('#commentform #comment').addClass(
+      'form-control form-control-sm mb-2'
+    );
   });
 })(jQuery);
