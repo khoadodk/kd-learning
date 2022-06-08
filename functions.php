@@ -62,7 +62,7 @@ function custom_widget()
     register_sidebar([
         'name'          => 'Footer Widgets',
         'id'            => 'footer_widgets',
-        'before_widget' => '<div class="col-lg-3 col-md-3"><div class="footer_widgets small" >',
+        'before_widget' => '<div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center justify-content-center"><div class="footer_widgets small" >',
         'after_widget'  => '</div></div>',
         'before_title'  => '<h4 class="fs-6">',
         'after_title'   => '</h4>',

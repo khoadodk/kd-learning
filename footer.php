@@ -1,4 +1,4 @@
-<footer class="main-footer bg-dark text-white pt-5 pb-3">
+<footer class="main-footer bg-dark text-white pt-5 pb-3 mt-auto">
     <div class="container">
         <div class="row">
             <!-- Widget -->

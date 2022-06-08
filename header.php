@@ -9,8 +9,8 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class() ?>>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light bg-light small custom-nav">
+<body <?php body_class() ?> class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light bg-light small custom-nav border-bottom">
         <div class="container">
             <a class="navbar-brand" href="<?php echo bloginfo('url') ?>">
                 <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="logo">
