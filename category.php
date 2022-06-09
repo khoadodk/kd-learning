@@ -1,17 +1,13 @@
 <?php get_header(); ?>
 
-<header class="cat-header py-5">
+<section class="hero" style="background-image: url(<?php echo get_template_directory_uri() ?>/images/news.png)">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-6">
-                <div class="cat-header-text text-center">
-                    <h1 class="fw-600">Category: <?php echo single_cat_title() ?></h1>
-                    <p><?php echo category_description() ?></p>
-                </div>
-            </div>
+        <div class="hero__content">
+            <h1 class="hero__title text-center"><?php echo single_cat_title() ?></h1>
         </div>
     </div>
-</header>
+</section>
+
 
 <section class="default-holder mt-3">
     <div class="container">
