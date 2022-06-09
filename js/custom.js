@@ -16,5 +16,9 @@
     $('#commentform #comment').addClass(
       'form-control form-control-sm mb-2'
     );
+
+    // Contact Form
+    $('.wpcf7-submit').addClass('btn btn-outline-primary');
+    $('.wpcf7-form-control').addClass('form-control');
   });
 })(jQuery);

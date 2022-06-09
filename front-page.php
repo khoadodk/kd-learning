@@ -6,15 +6,16 @@
 
 get_header(); ?>
 
+
 <header class="main-header py-5">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <?php if (is_active_sidebar('front_page_banner_text')) : ?>
                     <?php dynamic_sidebar('front_page_banner_text'); ?>
                 <?php endif; ?>
 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#signUpModal">
                     <svg style="color: white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="20" preserveAspectRatio="xMidYMid meet" version="1.0">
                         <defs>
                             <clipPath id="id1">
@@ -27,7 +28,7 @@ get_header(); ?>
                     </svg> Sign Up
                 </button>
             </div>
-            <div class="col-lg-6 col-md-6 ">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <?php if (is_active_sidebar('front_page_banner_image')) : ?>
                     <?php dynamic_sidebar('front_page_banner_image'); ?>
                 <?php endif; ?>
@@ -37,7 +38,7 @@ get_header(); ?>
 </header>
 
 <section class="features-section py-5">
-    <h1 class="text-center py-3">Features</h1>
+    <h1 class="heading text-center py-3">Features<span></span></h1>
     <p class="text-center pb-3">Why us?</p>
     <div class="container">
         <div class="row">
@@ -48,9 +49,9 @@ get_header(); ?>
                     </div>
                     <div class="flex-grow-1 ms-3">
                         <h3 class="fs-6 fw-600 mt-3">
-                            Featured Heading
+                            <?php echo the_field('feature_one_title') ?>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><?php echo the_field('feature_one_text') ?></p>
                     </div>
                 </div>
             </div>
@@ -61,9 +62,9 @@ get_header(); ?>
                     </div>
                     <div class="flex-grow-1 ms-3">
                         <h3 class="fs-6 fw-600 mt-3">
-                            Featured Heading
+                            <?php echo the_field('feature_two_title') ?>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><?php echo the_field('feature_two_text') ?></p>
                     </div>
                 </div>
             </div>
@@ -74,9 +75,9 @@ get_header(); ?>
                     </div>
                     <div class="flex-grow-1 ms-3">
                         <h3 class="fs-6 fw-600 mt-3">
-                            Featured Heading
+                            <?php echo the_field('feature_three_title') ?>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><?php echo the_field('feature_three_text') ?></p>
                     </div>
                 </div>
             </div>
@@ -112,7 +113,7 @@ get_header(); ?>
 
 <section class="course-cat py-3">
     <div class="container">
-        <h1 class="text-center py-3">Courses</h1>
+        <h1 class="heading text-center py-3">Courses<span></span></h1>
         <p class="text-center pb-3">What We Offer</p>
 
         <div class="row">
