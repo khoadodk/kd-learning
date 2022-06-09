@@ -1,16 +1,12 @@
 <?php get_header(); ?>
 
-<header class="cat-header py-5">
+<section class="hero" style="background-image: url(<?php echo get_template_directory_uri() ?>/images/course2.png)">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-6">
-                <div class="cat-header-text text-center">
-                    <h1 class="fw-600"><?php echo the_archive_title() ?></h1>
-                </div>
-            </div>
+        <div class="hero__content">
+            <h1 class="hero__title text-center">Hybrid Courses</h1>
         </div>
     </div>
-</header>
+</section>
 
 <section class="default-holder mt-3">
     <div class="container">
@@ -40,6 +36,7 @@
                                     <div class="col-lg-8 col-md-8">
                                         <h3 class="fs-5 fw-600"><?php echo get_the_title(); ?></h3>
                                         <p><?php echo get_the_excerpt() ?></p>
+                                        <p><span class="badge bg-primary pr-2"><?php echo the_field('cost') ?></span> <span class="badge bg-success"><?php echo the_field('duration') ?></span></p>
                                     </div>
                                 </div>
                             </a>
@@ -47,7 +44,7 @@
                         }
                     } else {
                         ?>
-                        <p><?php esc_html_e('Sorry, no posts matched your criteria') ?></p>
+                        <p class="text-center"><?php esc_html_e('Sorry! No course is available at the moment.') ?></p>
                     <?php
                     }
                     ?>
